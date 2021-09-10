@@ -1,8 +1,16 @@
 ---
+output: 
+  html_document: 
+    keep_md: yes
+---
+---
 title: "Lab03"
 author: "Haoran Zhang"
 date: "2021/9/10"
-output: github_document
+output:
+  github_document:
+    keep_html: false
+    html_preview: false
 
 
 ```{r setup, include=FALSE}
@@ -21,6 +29,7 @@ met <- data.table::fread("met_all.gz")
 ```{r}
 dim(met)
 ```
+
 ```{r}
 head(met)
 ```
@@ -147,3 +156,4 @@ plot(elev$date, elev$temp, type='l')
 ```{r}
 plot(elev$date, elev$wind.sp, type='l')
 ```
+Temperature dropps as wind speed increases.

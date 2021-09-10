@@ -2,14 +2,16 @@
 title: "Lab03"
 author: "Haoran Zhang"
 date: "2021/9/10"
-output: pdf_document
+output:
+  github_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Read in the data
+## 1. Read in the data
 First download and then read in with data.table:fread()
 
 ```{r}
@@ -17,7 +19,7 @@ download.file("https://raw.githubusercontent.com/USCbiostats/data-science-data/m
 met <- data.table::fread("met_all.gz")
 ```
 
-## Check the dimensions, headers, footers. How many columns, rows are there?
+## 2. Check the dimensions, headers, footers. How many columns, rows are there?
 ```{r}
 dim(met)
 ```
