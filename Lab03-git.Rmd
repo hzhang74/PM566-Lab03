@@ -156,4 +156,4 @@ plot(elev$date, elev$temp, type='l')
 ```{r}
 plot(elev$date, elev$wind.sp, type='l')
 ```
-Temperature dropps as wind speed increases.
+Temperature drops as wind speed increases.
